@@ -17,10 +17,9 @@ public class CustomerController {
 
     private Map<String, Customer> customers = null;
 
-    public CustomerController(){
+    public CustomerController() {
         customers = new HashMap<String, Customer>();
     }
-
 
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -39,11 +38,11 @@ public class CustomerController {
     public String saveCustomerAction(
             @Valid Customer customer,
             BindingResult bindingResult, Model model) {
+
         if (bindingResult.hasErrors()) {
             return "create";
         }
         model.addAttribute("customer", customer);
-        customers.put(customer.getEmail(), customer);
         return "result";
     }
 

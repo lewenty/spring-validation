@@ -12,8 +12,8 @@ spirng framework ile dogrulama
     - tarih
     - nümerik
     - alfanümerik
-    
-    eklenecekler
     - telefon numarası doğrulama
+
+    eklenecekler
     - dis desteği ekleme
     
