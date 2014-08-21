@@ -14,6 +14,7 @@
 
 <strong>Adi :</strong>${customer.name}<br>
 <strong>Email :</strong>${customer.email}<br>
+<strong>Telefon :</strong>${customer.phone}<br>
 <strong>Yasi:</strong>${customer.age}<br>
 <strong>Cinsiyeti :</strong>${customer.gender}<br>
 <strong>Dogum Tarihi :</strong><fmt:formatDate value="${customer.birthday}" type="date"/><br>

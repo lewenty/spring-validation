@@ -49,11 +49,11 @@
             <td><springForm:input path="birthday" placeholder="MM/dd/yyyy"/></td>
             <td><springForm:errors path="birthday" cssClass="error"/></td>
         </tr>
-            <%--<tr>--%>
-            <%--<td>Phone:</td>--%>
-            <%--<td><springForm:input path="phone" /></td>--%>
-            <%--<td><springForm:errors path="phone" cssClass="error" /></td>--%>
-            <%--</tr>--%>
+            <tr>
+            <td>Telefon:</td>
+            <td><springForm:input path="phone" /></td>
+            <td><springForm:errors path="phone" cssClass="error" /></td>
+            </tr>
         <tr>
             <td colspan="3"><input type="submit" value="Dogrula"></td>
         </tr>

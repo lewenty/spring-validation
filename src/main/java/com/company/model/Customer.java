@@ -1,6 +1,7 @@
 package com.company.model;
 
 
+import com.company.validation.Phone;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -25,11 +26,19 @@ public class Customer {
     @NotNull @Past
     private Date birthday;
 
-//    @Phone
-//    private String phone;
+    @Phone
+    private String phone;
 
     public enum Gender {
         MALE, FEMALE
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getName() {
